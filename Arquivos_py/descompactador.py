@@ -55,7 +55,7 @@ class Descompactador():
                 input_file.close()
 
         print(hora)
-        df = pd.DataFrame({"id_vaca":_id,"hora":_hora,"acx":_acx,"acy":_acy,"acz":_acz, "temperatura": _temperatura})
+        df = pd.DataFrame({"id_vaca":_id,"hora":_hora,"aceleracaox":_acx,"aceleracaoy":_acy,"aceleracaoz":_acz, "temperatura": _temperatura})
         print(df)
 
         df.to_excel('./amostras.xlsx', index = None)
